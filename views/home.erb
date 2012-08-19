@@ -1,0 +1,19 @@
+<h1>Gengo Info</h1>
+
+<h2>Name</h2>
+<p>
+	<%= @gengo %>
+</p>
+
+<h4>Has Awesomed his/her presence with MyGengo since:</h4>
+<p><%= Time.at(@stats['response']['user_since']) %></p>
+
+<h4>Has totally this many credits:</h4>
+<p>$<%= -1 * (@stats['response']['credits_spent']).to_f %>
+	(in <%= @stats['response']['currency'] %>)
+</p>
+
+<h4>Jobs</h4>
+<p>
+
+</p>
