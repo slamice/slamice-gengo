@@ -1,0 +1,27 @@
+body {
+	background-color: #D0E8F4;
+	font-family:Georgia;
+}
+
+h1 { 
+	color: #526C85;
+	margin: 0;
+}
+
+h2 { 
+	color: #526C85;
+}
+
+h4 {
+	color: #0066CC;
+	margin-left:1em;
+}
+
+b {
+	color: #6285C9;
+}
+
+p {
+	color: #666;
+	margin-left:1em;
+}

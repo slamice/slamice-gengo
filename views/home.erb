@@ -2,9 +2,10 @@
 
 <h2>Name</h2>
 <p>
-	<%= @gengo %>
+	Slamice
 </p>
 
+<h2>Info</h2>
 <h4>Has Awesomed his/her presence with MyGengo since:</h4>
 <p><%= Time.at(@stats['response']['user_since']) %></p>
 
@@ -13,7 +14,32 @@
 	(in <%= @stats['response']['currency'] %>)
 </p>
 
-<h4>Jobs</h4>
-<p>
+<h2>Jobs</h2>
 
+<h4>First Awesome Job</h4>
+<p>
+	<b>First Job:</b> <%= @gengo_firstJob['response']['job']['slug'] %> <br/>
+	<b>To Translate(<%= @gengo_firstJob['response']['job']['lc_src'] %> =>
+					 <%= @gengo_firstJob['response']['job']['lc_tgt'] %>):
+	</b><br/>
+	<p>
+		<%= @gengo_firstJob['response']['job']['body_src'] %>
+		<br/><br/>
+		<b>In </b> <%= @gengo_firstJob['response']['job']['currency'] %> <br/>
+		<b>Credits:</b> <%= @gengo_firstJob['response']['job']['credits'] %> <br/>
+	</p>
+</p>
+
+<h4>Second Awesome Job</h4>
+<p>
+	<b>First Job:</b> <%= @gengo_secondJob['response']['job']['slug'] %> <br/>
+	<b>To Translate (<%= @gengo_secondJob['response']['job']['lc_src'] %> =>
+					 <%= @gengo_secondJob['response']['job']['lc_tgt'] %>):
+	</b><br/>
+	<p>
+		<%= @gengo_secondJob['response']['job']['body_src'] %>
+		<br/><br/>
+		<b>In </b> <%= @gengo_secondJob['response']['job']['currency'] %> <br/>
+		<b>Credits:</b> <%= @gengo_secondJob['response']['job']['credits'] %> <br/>
+	</p>
 </p>
