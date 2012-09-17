@@ -1,27 +1,66 @@
 body {
-	background-color: #D0E8F4;
 	font-family:Georgia;
+	color: #FFF;
 }
 
-h1 { 
-	color: #526C85;
+h1 {
 	margin: 0;
 }
 
-h2 { 
-	color: #526C85;
+h3 { 
+	color: #96eed1;
 }
 
-h4 {
-	color: #0066CC;
-	margin-left:1em;
+h4 { 
+	color: #0b4733;
 }
 
 b {
-	color: #6285C9;
+	color: #0b4733;
 }
 
 p {
-	color: #666;
-	margin-left:1em;
+}
+
+.main {
+	background-color: #1CAD7E;
+	margin: 10px 50px 10px 50px;
+	padding: 10px 10px 20px 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; /* future proofing */
+	-khtml-border-radius: 10px; /* for old Konqueror browsers */
+}
+
+.job {
+	background-color: #30dda5;
+	margin: 10px;
+	padding: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; /* future proofing */
+	-khtml-border-radius: 10px; /* for old Konqueror browsers */
+}
+
+input {
+	border: 2px solid #cccccc;
+	font-family:Georgia;
+	padding: 5px;
+}
+
+button {
+	cursor: hand;
+}
+
+textarea#body_src {
+	width:  60%;
+	height: 200px;
+	border: 3px solid #cccccc;
+	font-family: Tahoma, sans-serif;
+}
+
+.jobButton{
+	font-family:Georgia;
+	font-size:1em;
+	color: #FFF;
 }
